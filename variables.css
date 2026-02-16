@@ -26,4 +26,11 @@
   --purple-700: hsl(264, 64%, 52%); /* social */
   --yellow-300: hsl(43, 84%, 65%); /* self care */
 
+  /* COLORS NEUTRAL */
+
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --purple-500: hsl(235, 45%, 61%);
+  --navy-200: hsl(236, 100%, 87%);
+
 }
