@@ -26,9 +26,11 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 
+
   /* BODY COPY */
 
   --font-size: 18px /* (card titles e.g. Work, Play) */
+
 
   /* ============================================================
     Sistema di spaziatura fluido basato su clamp()
@@ -59,7 +61,6 @@
   --spacing-500: clamp(2.5rem, 2.2rem + 1.2vw, 3rem);
   /* Min 2.5rem (40px) → Max 3rem (48px)
       Spaziatura macro, layout ampi, sezioni principali */
-
 
 
   /* COLORS PRIMARY */
