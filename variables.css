@@ -1,0 +1,19 @@
+/* ===============================
+   VARIABLES — Global Design System
+   =============================== */
+
+/* ===
+   RESET DI BASE
+   - Impedisce differenze tra browser
+   - Garantisce un box model prevedibile === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+}
