@@ -30,6 +30,38 @@
 
   --font-size: 18px /* (card titles e.g. Work, Play) */
 
+  /* ============================================================
+    Sistema di spaziatura fluido basato su clamp()
+    - Min: valori mobile-first
+    - Max: valori desktop
+    - Interpolazione fluida tra 320px e 1440px
+    ============================================================ */
+
+  --spacing-0: 0rem; 
+  /* 0px — nessuna spaziatura */
+
+  --spacing-100: clamp(0.5rem, 0.4rem + 0.3vw, 0.75rem);
+  /* Min 0.5rem (8px) → Max 0.75rem (12px)
+      Perfetto per micro-gap, icone, label, micro-layout */
+
+  --spacing-200: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  /* Min 1rem (16px) → Max 1.5rem (24px)
+      Spaziatura base per componenti, paragrafi, card */
+
+  --spacing-300: clamp(1.5rem, 1.3rem + 0.7vw, 2rem);
+  /* Min 1.5rem (24px) → Max 2rem (32px)
+      Ottimo per separare sezioni e blocchi visivi */
+
+  --spacing-400: clamp(2rem, 1.8rem + 1vw, 2.5rem);
+  /* Min 2rem (32px) → Max 2.5rem (40px)
+      Ideale per padding interni importanti, hero spacing */
+
+  --spacing-500: clamp(2.5rem, 2.2rem + 1.2vw, 3rem);
+  /* Min 2.5rem (40px) → Max 3rem (48px)
+      Spaziatura macro, layout ampi, sezioni principali */
+
+
+
   /* COLORS PRIMARY */
 
   --purple-600: hsl(246, 80%, 60%);
