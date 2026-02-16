@@ -26,6 +26,10 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 
+  /* BODY COPY */
+
+--font-size: 18px /* (card titles e.g. Work, Play) */
+
   /* COLORS PRIMARY */
 
   --purple-600: hsl(246, 80%, 60%);
