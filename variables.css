@@ -16,6 +16,16 @@
 
 :root {
 
+  /* FONT FAMILY */
+
+  --font-family: [Rubik](https://fonts.google.com/specimen/Rubik);
+
+  /* --- FONT WEIGHTS --- */
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
   /* COLORS PRIMARY */
 
   --purple-600: hsl(246, 80%, 60%);
