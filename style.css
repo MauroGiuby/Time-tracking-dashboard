@@ -134,7 +134,63 @@ body {
   width: max-content;
   font-size: 1.5rem;
   color: var(--navy-200);
+  transition: color 250ms;
+  cursor: pointer;
 }
+
+/*
+.activity-tracker-option:hover,
+.activity-tracker-option.active {
+  color: white;
+}
+*/
+
+.activity-tracker-option:is(:hover, .active) {
+  color: white;
+}
+
+.activity-tracker-activity {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3.8rem 1fr;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  border-radius: var(--br);
+}
+
+@media screen and (min-width: 500px) {
+  .activity-tracker-activity {
+    grid-template-rows: 4.5rem 1fr;
+  }
+}
+
+.activity-tracker-activity:is(.work) {
+  --background: var(--orange-300);
+}
+
+.activity-tracker-activity:is(.play) {
+  --background: var(--blue-300);
+}
+
+.activity-tracker-activity:is(.study) {
+  --background: var(--pink-400);
+}
+
+.activity-tracker-activity:is(.exercise) {
+  --background: var(--green-400);
+}
+
+.activity-tracker-activity:is(.social) {
+  --background: var(--purple-700);
+}
+
+.activity-tracker-activity:is(.self-care) {
+  --background: var(--yellow-300);
+}
+
+
+
 
 
 
