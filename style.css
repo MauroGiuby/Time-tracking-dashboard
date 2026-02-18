@@ -34,7 +34,7 @@ body {
 }
 
 .activity-tracker-menu {
-  background: var(--purple-700);
+  background: var(--navy-800);
   border-radius: var(--br);
   overflow: hidden;
   width: 100%;
@@ -43,7 +43,47 @@ body {
 @media screen and (min-width: 500px) {
   .activity-tracker-menu {
     grid-row: 1/3;
+    display: flex;
+    flex-flow: column nowrap;
   }
+}
+
+.activity-tracker-owner {
+  width: 100%;
+  padding: 3.1rem 2.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  background-color: var(--purple-700);
+  border-radius: 0 0 var(--br) var(--br);
+}
+
+@media screen and (min-width: 500px) {
+  .activity-tracker-owner {
+    padding: 3.4rem 2.9rem 8rem 2.9rem;
+    flex-flow: column nowrap;
+    align-items: start;
+    gap: 4.3rem;
+    flex: 1 0 auto;
+  }
+}
+
+.activity-tracker-owner-img {
+  width: 6.4rem;
+  border: 0.3rem solid white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 500px) {
+  .activity-tracker-owner-img {
+    width: 7.8rem;
+  }
+}
+
+.activity-tracker-owner-container {
+  
 }
 
 
