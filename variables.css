@@ -80,4 +80,15 @@
   --purple-500: hsl(235, 45%, 61%);
   --navy-200: hsl(236, 100%, 87%);
 
+
+  /* Z-indexes */
+
+  --z-index-top: 10;
+  --z-index-middle: 5;
+  --z-index-bottom: 1;
+
+  /* BORDER RADIUS */
+
+  --br: 1.5rem;
+
 }
