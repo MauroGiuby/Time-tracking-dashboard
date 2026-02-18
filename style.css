@@ -83,7 +83,39 @@ body {
 }
 
 .activity-tracker-owner-container {
-  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.4rem;
+}
+
+@media screen and (min-width: 500px) {
+  .activity-tracker-owner-container {
+    gap: 0.3rem;
+    max-width: 60%;
+  }
+}
+
+.activity-tracker-owner-for {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  color: var(--navy-200);
+}
+
+.activity-tracker-owner-name {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--navy-200);
+}
+
+@media screen and (min-width: 500px) {
+  .activity-tracker-owner-name {
+    line-height: 4rem;
+  }
+}
+
+.activity-tracker-options {
+  padding: 2.4rem 2rem 2.5rem 3.3rem;
 }
 
 
