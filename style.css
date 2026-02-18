@@ -116,6 +116,24 @@ body {
 
 .activity-tracker-options {
   padding: 2.4rem 2rem 2.5rem 3.3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .activity-tracker-options {
+    flex-flow: column nowrap;
+    gap: 2.1rem;
+    padding: 2.6rem 3.2rem 3.2rem;
+  }
+}
+
+.activity-tracker-option {
+  width: max-content;
+  font-size: 1.5rem;
+  color: var(--navy-200);
 }
 
 
