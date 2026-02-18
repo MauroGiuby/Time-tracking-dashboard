@@ -1,6 +1,11 @@
 body {
   font-family: var(--font-family);
   font-weight: var(--font-weight-regular);
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--navy-950);
+  display: grid;
+  place-items: center;
 }
 
 h1 {
