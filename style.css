@@ -197,6 +197,27 @@ body {
   place-items: start end;
 }
 
+.activity-bg > img {
+  transform: translate(-2rem, -1rem);
+  position: relative;
+  z-index: var(--z-index-bottom);
+}
+
+.activity-info {
+  position: relative;
+  z-index: var(--z-index-middle);
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background: var(--navy-900);
+  transition: var(--background) 250ms, trasform 250ms;
+  height: 100%;
+  padding: 2.8rem 2.4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
 
 
 
