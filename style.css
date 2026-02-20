@@ -5,6 +5,7 @@ body {
   display: grid;
   place-items: center;
   padding: 8.1rem 2.4rem;
+  font-family: var(--font-family);
 }
 
 .activity-tracker {
@@ -247,8 +248,12 @@ body {
 }
 
 .activity-name {
+  font-family: var(--font-family);
+  font-size: var(--tp-5m-size);
+  line-height: var(--tp-5m-line);
+  font-weight: var(--tp-5m-weight);
+  letter-spacing: var(--tp-5m-letter);
   color: white;
-  font-weight: 500;
 }
 
 .activity-options {
@@ -259,16 +264,22 @@ body {
   fill: white;
 }
 
-.activity-current-timeframe {
-  font-size: var(--font-size);
-  font-weight: 300;
+.activity-current-timeframes {
+  font-family: var(--font-family);
+  font-size: var(--tp-3-size);
+  line-height: var(--tp-3-line);
+  font-weight: var(--tp-3-weight);
+  letter-spacing: var(--tp-3-letter);
   color: white;
-  line-height: 6.6rem;
 }
 
-.activity-previous-timeframe {
+.activity-previous-timeframes {
   display: flex;
-  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-size: var(--tp-6-size);
+  line-height: var(--tp-6-line);
+  font-weight: var(--tp-6-weight);
+  letter-spacing: var(--tp-6-letter);
   color: var(--navy-200);
 }
 
