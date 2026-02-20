@@ -31,6 +31,53 @@
 
   --font-size: 18px /* (card titles e.g. Work, Play) */
 
+  /* ===============================
+   TEXT PRESETS — Rubik Scale
+   =============================== */
+
+    /* Preset 1 — Rubik Light — 56px / 66px */
+    --tp-1-size: 3.5rem;            /* 56px */
+    --tp-1-line: 4.125rem;          /* 66px */
+    --tp-1-weight: var(--font-weight-light);
+    --tp-1-letter: 0px;
+
+    /* Preset 2 — Rubik Light — 40px / 47px */
+    --tp-2-size: 2.5rem;            /* 40px */
+    --tp-2-line: 2.9375rem;         /* 47px */
+    --tp-2-weight: var(--font-weight-light);
+    --tp-2-letter: 0px;
+
+    /* Preset 3 — Rubik Light — 32px / 38px */
+    --tp-3-size: 2rem;              /* 32px */
+    --tp-3-line: 2.375rem;          /* 38px */
+    --tp-3-weight: var(--font-weight-light);
+    --tp-3-letter: 0px;
+
+    /* Preset 4 — Rubik Light — 24px / 28px */
+    --tp-4-size: 1.5rem;            /* 24px */
+    --tp-4-line: 1.75rem;           /* 28px */
+    --tp-4-weight: var(--font-weight-light);
+    --tp-4-letter: 0px;
+
+    /* Preset 5 — Rubik Medium — 18px / 21px */
+    --tp-5m-size: 1.125rem;         /* 18px */
+    --tp-5m-line: 1.3125rem;        /* 21px */
+    --tp-5m-weight: var(--font-weight-medium);
+    --tp-5m-letter: 0px;
+
+    /* Preset 5 — Rubik Regular — 18px / 21px */
+    --tp-5r-size: 1.125rem;         /* 18px */
+    --tp-5r-line: 1.3125rem;        /* 21px */
+    --tp-5r-weight: var(--font-weight-regular);
+    --tp-5r-letter: 0px;
+
+    /* Preset 6 — Rubik Regular — 15px / 18px */
+    --tp-6-size: 0.9375rem;         /* 15px */
+    --tp-6-line: 1.125rem;          /* 18px */
+    --tp-6-weight: var(--font-weight-regular);
+    --tp-6-letter: 0px;
+
+
 
   /* ============================================================
     Sistema di spaziatura fluido basato su clamp()

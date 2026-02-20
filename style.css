@@ -260,7 +260,7 @@ body {
 }
 
 .activity-current-timeframe {
-  font-size: var(--font-size-activity-result);
+  font-size: var(--font-size);
   font-weight: 300;
   color: white;
   line-height: 6.6rem;
@@ -268,7 +268,7 @@ body {
 
 .activity-previous-timeframe {
   display: flex;
-  font-size: var(--font-size-activity-window);
+  font-size: var(--font-size);
   color: var(--navy-200);
 }
 
