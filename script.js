@@ -8,5 +8,8 @@ buttons.forEach(button => {
   button.addEventListener('click', () => { 
     activateClickedButton(button)
     const clickedOption = button.dataset.option
+    renderCards(clickedOption)
   })
 })
+
+
