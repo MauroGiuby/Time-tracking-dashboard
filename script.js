@@ -21,6 +21,16 @@ const activateClickedButton = (button) => {
 }
 
 
+const renderCards = (clickedOption) => {
+
+  data.forEach(activity => {
+    const name = activity.title
+    const activityClass = name.toLowerCase().replace('','_')
+    const timeframeData = activity.timeframes
+  });
+};
+
+
 // Per ogni bottone trovato...
 buttons.forEach(button => {
 
