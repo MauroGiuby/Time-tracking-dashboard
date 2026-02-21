@@ -23,10 +23,22 @@ const activateClickedButton = (button) => {
 
 const renderCards = (clickedOption) => {
 
+  const calcTimeframe = (option) => {
+    if (option == 'daily') {
+      return 'Yesterday'
+    } else if (option == 'weekly') {
+      return 'Last Week'
+    } else if (option == 'monthly') {
+      return 'Last Month'
+    }
+  }
+
   data.forEach(activity => {
     const name = activity.title
     const activityClass = name.toLowerCase().replace('','_')
-    const timeframeData = activity.timeframes
+    const timeframeData = activity.timeframes[clickedOption]
+    const previousTimeframe = calcTimeframe(clickedOption)
+    console.log(activityClass)
   });
 };
 
