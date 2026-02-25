@@ -38,7 +38,10 @@ const renderCards = (clickedOption) => {
     const activityClass = name.toLowerCase().replace('','_')
     const timeframeData = activity.timeframes[clickedOption]
     const previousTimeframe = calcTimeframe(clickedOption)
-    console.log(activityClass)
+    console.log(name)
+    // console.log(activityClass)
+    // console.log(timeframeData)
+    // console.log(previousTimeframe)
   });
 };
 
