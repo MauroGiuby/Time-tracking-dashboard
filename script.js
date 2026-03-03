@@ -43,8 +43,8 @@ const renderCards = (clickedOption) => {
     // console.log(timeframeData)
     // console.log(previousTimeframe)
     const section = document.createElement('section')
-    section.classList.add('activity-tracker-activity')
-    const stringToInject = ''
+    section.classList.add('activity-tracker-activity', activityClass)
+    // const stringToInject = ''
   });
 };
 
