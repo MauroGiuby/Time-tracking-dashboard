@@ -137,6 +137,8 @@ body {
   color: var(--navy-200);
   transition: color 250ms;
   cursor: pointer;
+  background-color: transparent; 
+  border: none;
 }
 
 /*
@@ -146,9 +148,11 @@ body {
 }
 */
 
+
 .activity-tracker-option:is(:hover, .active) {
   color: white;
 }
+
 
 .activity-tracker-activity {
   width: 100%;
@@ -258,6 +262,8 @@ body {
 
 .activity-options {
   transition: white 250ms;
+  background-color: transparent; 
+  border: none;
 }
 
 .activity-options:hover > svg path {
