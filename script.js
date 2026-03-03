@@ -20,7 +20,10 @@ const activateClickedButton = (button) => {
   button.classList.add('active')
 }
 
-const clearActivities = () => {}
+const clearActivities = () => {
+  // Clear all activities from html
+  const activities = document.querySelectorAll('.activity-tracker-activity')
+}
 
 const renderCards = (clickedOption) => {
 
