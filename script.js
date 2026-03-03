@@ -23,10 +23,11 @@ const activateClickedButton = (button) => {
 const clearActivities = () => {
   // Clear all activities from html
   const activities = document.querySelectorAll('.activity-tracker-activity')
+  activities.forEach(a => a.remove())
 }
 
 const renderCards = (clickedOption) => {
-
+  clearActivities()
   const activityTracker = document.querySelector('section.activity-tracker')
 
   const calcTimeframe = (option) => {
@@ -106,5 +107,4 @@ buttons.forEach(button => {
   })
 })
 
-
-
+buttons[1].click()
