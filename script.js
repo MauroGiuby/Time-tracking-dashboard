@@ -20,8 +20,11 @@ const activateClickedButton = (button) => {
   button.classList.add('active')
 }
 
+const clearActivities = () => {}
 
 const renderCards = (clickedOption) => {
+
+  const activityTracker = document.querySelector('section.activity-tracker')
 
   const calcTimeframe = (option) => {
     if (option == 'daily') {
@@ -66,13 +69,16 @@ const renderCards = (clickedOption) => {
             ${timeframeData.current}hrs
           </h3>
           <div class="activity-previous-timeframes">
-            <p class="time-window">Last Week</p>
+            <p class="time-window">${previousTimeframe}</p>
             <p> - </p>
-            <p class="time">36hrs</p>
+            <p class="time">${timeframeData.previous}hrs</p>
           </div>
         </div>
       </div>
     `
+    section.innerHTML = stringToInject
+    // console.log(section)
+    activityTracker.append(section)
   });
 };
 
