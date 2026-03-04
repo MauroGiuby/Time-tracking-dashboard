@@ -1,18 +1,24 @@
+/* ===========================
+   BODY — layout generale
+   =========================== */
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; /* Garantisce che il body copra tutta l’altezza */
   background-color: var(--navy-950);
-  display: grid;
+  display: grid; /* Centra il contenuto verticalmente e orizzontalmente */
   place-items: center;
-  padding: 8.1rem 2.4rem;
+  padding: 8.1rem 2.4rem; /* Spaziatura responsiva */
   font-family: var(--font-family);
 }
 
+/* ===========================
+   GRID PRINCIPALE
+   =========================== */
 .activity-tracker {
   width: 100%;
   height: auto;
   display: grid;
-  grid-auto-rows: max-content;
+  grid-auto-rows: max-content; /* Le card crescono in base al contenuto */
   grid-template-columns: 1fr;
   justify-content: center;
   gap: 2.4rem;
@@ -21,7 +27,7 @@ body {
 @media screen and (min-width: 500px) {
   .activity-tracker {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; /* Due righe simmetriche */
     min-height: 51.8rem;
     gap: 3rem;
   }
@@ -29,26 +35,31 @@ body {
 
 @media screen and (min-width: 1110px) {
   .activity-tracker {
-    max-width: 111rem;
+    max-width: 111rem; /* Limita la larghezza massima */
   }
-  
 }
 
+/* ===========================
+   MENU LATERALE
+   =========================== */
 .activity-tracker-menu {
   background: var(--navy-800);
   border-radius: var(--br);
-  overflow: hidden;
+  overflow: hidden; /* Evita overflow degli elementi interni */
   width: 100%;
 }
 
 @media screen and (min-width: 500px) {
   .activity-tracker-menu {
-    grid-row: 1/3;
+    grid-row: 1/3; /* Occupa due righe nella griglia */
     display: flex;
     flex-flow: column nowrap;
   }
 }
 
+/* ===========================
+   SEZIONE PROFILO
+   =========================== */
 .activity-tracker-owner {
   width: 100%;
   padding: 3.1rem 2.9rem;
@@ -73,7 +84,7 @@ body {
 
 .activity-tracker-owner-img {
   width: 6.4rem;
-  border: 0.3rem solid white;
+  border: 0.3rem solid white; /* Evidenzia l’avatar */
   border-radius: 50%;
 }
 
@@ -83,6 +94,9 @@ body {
   }
 }
 
+/* ===========================
+   TESTI PROFILO
+   =========================== */
 .activity-tracker-owner-container {
   display: flex;
   flex-flow: column nowrap;
@@ -97,13 +111,11 @@ body {
 }
 
 .activity-tracker-owner-for {
-  font-family: var(--font-family);
   font-size: 1.5rem;
   color: var(--navy-200);
 }
 
 .activity-tracker-owner-name {
-  font-family: var(--font-family);
   font-size: 2rem;
   font-weight: var(--font-weight-regular);
   color: var(--navy-200);
@@ -115,6 +127,9 @@ body {
   }
 }
 
+/* ===========================
+   OPZIONI DAILY / WEEKLY / MONTHLY
+   =========================== */
 .activity-tracker-options {
   padding: 2.4rem 2rem 2.5rem 3.3rem;
   display: flex;
@@ -131,33 +146,38 @@ body {
   }
 }
 
+/* 
+   NOTA IMPORTANTE:
+   Qui rimuoviamo completamente lo stile nativo dei pulsanti,
+   eliminando il background bianco che vedevi.
+*/
 .activity-tracker-option {
   width: max-content;
   font-size: 1.5rem;
   color: var(--navy-200);
   transition: color 250ms;
   cursor: pointer;
+
+  /* Rimozione background bianco */
   background-color: transparent; 
   border: none;
+  box-shadow: none;
+  padding: 0; /* Evita padding nativo dei <button> */
 }
 
-/*
-.activity-tracker-option:hover,
-.activity-tracker-option.active {
-  color: white;
-}
-*/
-
+/* Hover + stato attivo */
 .activity-tracker-option:is(:hover, .active) {
   color: white;
 }
 
+/* ===========================
+   CARD ATTIVITÀ
+   =========================== */
 .activity-tracker-activity {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-rows: 3.8rem 1fr;
-  grid-template-columns: 1fr;
   overflow: hidden;
   border-radius: var(--br);
 }
@@ -168,33 +188,19 @@ body {
   }
 }
 
-.activity-tracker-activity:is(.work) {
-  --background: var(--orange-300);
-}
+/* Colori dinamici per categoria */
+.activity-tracker-activity:is(.work) { --background: var(--orange-300); }
+.activity-tracker-activity:is(.play) { --background: var(--blue-300); }
+.activity-tracker-activity:is(.study) { --background: var(--pink-400); }
+.activity-tracker-activity:is(.exercise) { --background: var(--green-400); }
+.activity-tracker-activity:is(.social) { --background: var(--purple-700); }
+.activity-tracker-activity:is(.self-care) { --background: var(--yellow-300); }
 
-.activity-tracker-activity:is(.play) {
-  --background: var(--blue-300);
-}
-
-.activity-tracker-activity:is(.study) {
-  --background: var(--pink-400);
-}
-
-.activity-tracker-activity:is(.exercise) {
-  --background: var(--green-400);
-}
-
-.activity-tracker-activity:is(.social) {
-  --background: var(--purple-700);
-}
-
-.activity-tracker-activity:is(.self-care) {
-  --background: var(--yellow-300);
-}
-
+/* ===========================
+   BACKGROUND ICONA
+   =========================== */
 .activity-bg {
   grid-row: 1/3;
-  grid-column: 1/2;
   background: var(--background);
   display: grid;
   place-items: start end;
@@ -206,14 +212,15 @@ body {
   z-index: var(--z-index-bottom);
 }
 
+/* ===========================
+   CONTENUTO DELLA CARD
+   =========================== */
 .activity-info {
   position: relative;
   z-index: var(--z-index-middle);
   grid-row: 2/3;
-  grid-column: 1/2;
   background: var(--navy-950);
-  transition: var(--background) 250ms, trasform 250ms;
-  height: 100%;
+  transition: var(--background) 250ms, transform 250ms;
   padding: 2.8rem 2.4rem;
   display: flex;
   flex-flow: column nowrap;
@@ -232,6 +239,9 @@ body {
   }
 }
 
+/* ===========================
+   TESTI INTERNI
+   =========================== */
 .activity-header,
 .activity-timeframes {
   display: flex;
@@ -250,16 +260,11 @@ body {
 }
 
 .activity-name {
-  font-family: var(--font-family);
   font-size: var(--tp-5m-size);
-  line-height: var(--tp-5m-line);
-  font-weight: var(--tp-5m-weight);
-  letter-spacing: var(--tp-5m-letter);
   color: white;
 }
 
 .activity-options {
-  transition: white 250ms;
   background-color: transparent; 
   border: none;
 }
@@ -269,23 +274,15 @@ body {
 }
 
 .activity-current-timeframes {
-  font-family: var(--font-family);
   font-size: var(--tp-3-size);
-  line-height: var(--tp-3-line);
-  font-weight: var(--tp-3-weight);
-  letter-spacing: var(--tp-3-letter);
   color: white;
 }
 
 .activity-previous-timeframes {
-  display: flex;
-  font-family: var(--font-family);
   font-size: var(--tp-6-size);
-  line-height: var(--tp-6-line);
-  font-weight: var(--tp-6-weight);
-  letter-spacing: var(--tp-6-letter);
   color: var(--navy-200);
 }
+
 
 
 
