@@ -78,7 +78,6 @@
   --tp-6-letter: 0px;
 
 
-
   /* ============================================================
     Sistema di spaziatura fluido basato su clamp()
     - Min: valori mobile-first
@@ -107,7 +106,7 @@
 
   --spacing-500: clamp(2.5rem, 2.2rem + 1.2vw, 3rem);
   /* Min 2.5rem (40px) → Max 3rem (48px)
-      Spaziatura macro, layout ampi, sezioni principali */
+    Spaziatura macro, layout ampi, sezioni principali */
 
 
   /* COLORS PRIMARY */
@@ -134,6 +133,7 @@
   --z-index-middle: 5;
   --z-index-bottom: 1;
 
+  
   /* BORDER RADIUS */
 
   --br: 1.5rem;
