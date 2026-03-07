@@ -20,13 +20,6 @@
 
   --font-family: 'Rubik', sans-serif; /* [Rubik](https://fonts.google.com/specimen/Rubik); */
 
-  /* --- FONT WEIGHTS --- */
-  /*  
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  */
-
   /* BODY COPY */
 
   --font-size: 18px /* (card titles e.g. Work, Play) */
@@ -133,7 +126,7 @@
   --z-index-middle: 5;
   --z-index-bottom: 1;
 
-  
+
   /* BORDER RADIUS */
 
   --br: 1.5rem;
