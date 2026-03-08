@@ -23,7 +23,7 @@ const renderCards = (clickedOption) => {
 
   data.forEach(activity => {
     const name = activity.title
-    const activityClass = name.toLowerCase().replace('', '_')
+    const activityClass = name.toLowerCase().replace(' ', '-')
     const timeframeData = activity.timeframes[clickedOption]
     const previousTimeframe = calcTimeframe(clickedOption)
 
