@@ -69,3 +69,4 @@ buttons.forEach(button => {
 })
 
 buttons[1].click()
+
