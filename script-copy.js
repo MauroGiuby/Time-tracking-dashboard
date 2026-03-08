@@ -7,8 +7,17 @@ const activateClickedButton = (button) => {
   button.classList.add('active')
 }
 
+// ***
+// const clearActivities = () => {
+  // Clear all activities from html
+  // const activities = document.querySelectorAll('.activity-tracker-activity')
+  // activities.forEach(a => a.remove())
+// }
+
+// le righe di sopra sono state rimosse ed iinserito sotto solo "clearActivities()"
+
 const renderCards = (clickedOption) => {
-  clearActivities()
+  clearActivities() // sintetizza tutte le 3 righe di sopra ***
   const activityTracker = document.querySelector('section.activity-tracker')
 
   const calcTimeframe = (option) => {
@@ -36,7 +45,9 @@ const renderCards = (clickedOption) => {
       </div>
       <div class="activity-info">
         <header class="activity-header">
-          <h2 class="activity-name">${name}</h2>
+          <h2 class="activity-name">
+            ${name}
+          </h2>
           <button class="activity-options" aria-label="More options">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#BBC0FF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
               <circle cx="5" cy="12" r="2"/>
@@ -46,11 +57,17 @@ const renderCards = (clickedOption) => {
           </button>
         </header>
         <div class="activity-timeframes">
-          <h3 class="activity-current-timeframes">${timeframeData.current}hrs</h3>
+          <h3 class="activity-current-timeframes">
+            ${timeframeData.current}hrs
+          </h3>
           <div class="activity-previous-timeframes">
-            <p class="time-window">${previousTimeframe}</p>
+            <p class="time-window">
+              ${previousTimeframe}
+            </p>
             <p> - </p>
-            <p class="time">${timeframeData.previous}hrs</p>
+            <p class="time">
+              ${timeframeData.previous}hrs
+            </p>
           </div>
         </div>
       </div>
