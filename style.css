@@ -283,6 +283,7 @@ body {
 
 .activity-name {
   font-size: var(--tp-5m-size);
+  font-weight: var(--tp-5r-weight);
   color: white;
 }
 
@@ -297,7 +298,9 @@ body {
 
 .activity-current-timeframes {
   font-size: var(--tp-3-size);
+  font-weight: var(--tp-3-weight);
   color: white;
+  line-height: 6.6.rem;
 }
 
 .activity-previous-timeframes {
