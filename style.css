@@ -304,6 +304,7 @@ body {
 }
 
 .activity-previous-timeframes {
+  display: flex;
   font-size: var(--tp-6-size);
   color: var(--navy-200);
 }
