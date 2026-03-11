@@ -178,6 +178,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: 3.8rem 1fr;
+  grid-template-columns: 1fr;
   overflow: hidden;
   border-radius: var(--br);
 }
@@ -189,18 +190,36 @@ body {
 }
 
 /* Colori dinamici per categoria */
-.activity-tracker-activity:is(.work) { --background: var(--orange-300); }
-.activity-tracker-activity:is(.play) { --background: var(--blue-300); }
-.activity-tracker-activity:is(.study) { --background: var(--pink-400); }
-.activity-tracker-activity:is(.exercise) { --background: var(--green-400); }
-.activity-tracker-activity:is(.social) { --background: var(--purple-700); }
-.activity-tracker-activity:is(.self-care) { --background: var(--yellow-300); }
+.activity-tracker-activity:is(.work) { 
+  --background: var(--orange-300); 
+}
+
+.activity-tracker-activity:is(.play) { 
+  --background: var(--blue-300); 
+}
+
+.activity-tracker-activity:is(.study) { 
+  --background: var(--pink-400); 
+}
+
+.activity-tracker-activity:is(.exercise) { 
+  --background: var(--green-400); 
+}
+
+.activity-tracker-activity:is(.social) { 
+  --background: var(--purple-700); 
+}
+
+.activity-tracker-activity:is(.self-care) { 
+  --background: var(--yellow-300); 
+}
 
 /* ===========================
    BACKGROUND ICONA
    =========================== */
 .activity-bg {
   grid-row: 1/3;
+  grid-column: 1/2;
   background: var(--background);
   display: grid;
   place-items: start end;
