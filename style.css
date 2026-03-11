@@ -68,7 +68,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  background-color: var(--purple-700);
+  background: var(--purple-700);
   border-radius: 0 0 var(--br) var(--br);
 }
 
@@ -111,12 +111,12 @@ body {
 }
 
 .activity-tracker-owner-for {
-  font-size: 1.5rem;
+  font-size: var(--tp-4-size);
   color: var(--navy-200);
 }
 
 .activity-tracker-owner-name {
-  font-size: 2rem;
+  font-size: var(--tp-2-size);
   font-weight: var(--font-weight-regular);
   color: var(--navy-200);
 }
@@ -153,7 +153,7 @@ body {
 */
 .activity-tracker-option {
   width: max-content;
-  font-size: 1.5rem;
+  font-size: var(--tp-4-size);
   color: var(--navy-200);
   transition: color 250ms;
   cursor: pointer;
