@@ -222,7 +222,8 @@ body {
   grid-column: 1/2;
   background: var(--background);
   display: grid;
-  place-items: start end;
+  place-items: start end; /* icona all interno della fascia colorata sul lato destro */
+  height: 100%; /* definisce la larghezza della fascia colorata in alto */
 }
 
 .activity-bg > img {
@@ -238,6 +239,7 @@ body {
   position: relative;
   z-index: var(--z-index-middle);
   grid-row: 2/3;
+  grid-column: 1/2;
   background: var(--navy-950);
   transition: var(--background) 250ms, transform 250ms;
   padding: 2.8rem 2.4rem;
